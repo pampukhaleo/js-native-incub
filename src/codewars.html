@@ -8,14 +8,20 @@
   <title>Document</title>
 </head>
 <body>
-
-<input id="search"/>
-<button id="find">find</button>
-
 <script>
+  function stringy(size) {
+    let str = ''
+    for (let i = 0; i < size; i++) {
+      if (str.slice(-1) === '1') {
+        str += 0
+      } else {
+        str += 1
+      }
+    }
+    return str
+  }
 
-  const inputElement = document.getElementById('micronesia');
-  inputElement.value = '';
+  console.log(stringy(3));
 </script>
 </body>
 </html>
